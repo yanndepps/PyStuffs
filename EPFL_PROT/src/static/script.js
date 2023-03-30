@@ -1,5 +1,10 @@
-// Title in motion
-function moveTitle() {
+/////////////////////////////////
+// --- set title in motion --- //
+/////////////////////////////////
+
+// use an IIFE to automagically call
+// our function as it is defined
+(function moveTitle() {
 	let title = document.getElementsByTagName("title")[0];
 	let titleText = title.innerHTML;
 	title.innerHTML = titleText.substring(titleText.length - 1) + titleText.substring(0, titleText.length - 1);
@@ -7,10 +12,12 @@ function moveTitle() {
 		window.requestAnimationFrame(moveTitle);
 	}, 250);
 }
-moveTitle();
+)();
+
 /////////////////////////////////////////
 // --- local storage & user inputs --- //
 /////////////////////////////////////////
+
 // pick some DOM elements
 const greetings = document.getElementById("greetings");
 const addUserName = document.getElementById("add-user");
@@ -49,10 +56,10 @@ if (createUser) {
 	});
 }
 
-
 ////////////////////////////////////////
 ////// --- typewritter effect --- //////
 ////////////////////////////////////////
+
 const emptyTxt = "";
 const idAddUsr = "add-user";
 const idAddNote = "add-notes";
@@ -109,11 +116,10 @@ class TypeWritter {
 // one for the username placeholder
 // the second one for the add-note placeholder
 // the third one for the get-notes placeholder
-// all txts rendered at different speeds
+// all txts render at different speeds
 const typeUsr = new TypeWritter(emptyTxt, txtUsr, idAddUsr, spdNote, typoUsr);
 const typeSearch = new TypeWritter(emptyTxt, txtSearch, idSearchNotes, spdSearchNote, typoSearchNote);
 const typeNote = new TypeWritter(emptyTxt, txtNote, idAddNote, spdUsr, typoNote);
 typeNote.type();
 typeUsr.type();
 typeSearch.type();
-
