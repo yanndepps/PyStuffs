@@ -10,7 +10,7 @@
 	title.innerHTML = titleText.substring(titleText.length - 1) + titleText.substring(0, titleText.length - 1);
 	setTimeout(() => {
 		window.requestAnimationFrame(moveTitle);
-	}, 250);
+	}, 500);
 }
 )();
 

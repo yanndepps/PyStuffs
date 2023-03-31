@@ -8,12 +8,64 @@
   box-sizing: border-box;
 }
 
+/* color schemes */
+
+:root {
+	/* original */
+
+	/* --body-color-start: #61d954; */
+	/* --body-color-end: #2ebf75; */
+	/* --main-bg-color: #202020; */
+	/* --input-form-color: #e5e5e5; */
+	/* --input-btn-color: #e5e5e5; */
+	/* --txt-title-color: #ffffff; */
+	/* --txt-data-color: #e5e5e5; */
+	/* --border-title-color: #2ebf75; */
+	/* --border-form-color: #eb3461; */
+
+	/* swift kiss */
+
+	/* --body-color-start: #333333; */
+	/* --body-color-end: #202020; */
+	/* --main-bg-color: #EF3E4A; */
+	/* --input-form-color: #FEDAC2; */
+	/* --input-btn-color: #FEDAC2; */
+	/* --txt-title-color: #B0D8DC; */
+	/* --txt-data-color: #FEDAC2; */
+	/* --border-title-color: #B0D8DC; */
+	/* --border-form-color: #FEDAC2; */
+
+	/* chivalrous fox */
+
+	--body-color-start: #333333;
+	--body-color-end: #202020;
+	--main-bg-color: #B6CAC0;
+	--input-form-color: #C02A1B;
+	--input-btn-color: #C02A1B;
+	--txt-title-color: #C02A1B;
+	--txt-data-color: #C02A1B;
+	--border-title-color: #C02A1B;
+	--border-form-color: #C02A1B;
+
+	/* cruller intentions */
+
+	/* --body-color-start: #333333; */
+	/* --body-color-end: #202020; */
+	/* --main-bg-color: #FDF06F; */
+	/* --input-form-color: #D31B33; */
+	/* --input-btn-color: #D31B33; */
+	/* --txt-title-color: #D31B33; */
+	/* --txt-data-color: #D31B33; */
+	/* --border-title-color: #D31B33; */
+	/* --border-form-color: #D31B33; */
+}
+
 body {
   height: 100vh;
   background: linear-gradient(
     135deg,
-    #61d954,
-    #2ebf75
+		var(--body-color-start),
+		var(--body-color-end)
     );
 }
 
@@ -22,14 +74,14 @@ p {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.5px;
-  color: white;
+  color: var(--txt-data-color);
   display: flex;
   align-items: left;
   justify-content: left;
 }
 
 #main {
-  background-color: #202020;
+  background-color: var(--main-bg-color);
   height: 450px;
   width: 400px;
   position: absolute;
@@ -47,7 +99,7 @@ p {
   margin-left: 60px;
   margin-right: 60px;
   padding-bottom: 25px;
-  border-bottom: 2px solid #2ebf75;
+  border-bottom: 2px solid var(--border-title-color);
 }
 
 #title > h1 {
@@ -56,7 +108,7 @@ p {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.5px;
-  color: white;
+  color: var(--txt-title-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,11 +125,11 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #e5e5e5;
+  color: var(--input-form-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px solid #eb3461;
+  border-bottom: 1.5px solid var(--border-form-color);
   outline: none;
   padding-left: 5px;
 }
@@ -93,11 +145,11 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #e5e5e5;
+  color: var(--input-form-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px solid #eb3461;
+  border-bottom: 1.5px solid var(--border-form-color);
   outline: none;
   padding-left: 5px;
 }
@@ -110,7 +162,7 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #e5e5e5;
+  color: var(--input-form-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;
@@ -122,7 +174,7 @@ p {
   margin-right: 55px;
   margin-top: 25px;
   padding-bottom: 28.5px;
-  border-bottom: 2px solid #2ebf75;
+  border-bottom: 2px solid var(--border-title-color);
 }
 
 /* search notes */
@@ -136,11 +188,11 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #e5e5e5;
+  color: var(--input-form-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px solid #eb3461;
+  border-bottom: 1.5px solid var(--border-form-color);
   outline: none;
   padding-left: 5px;
 }
@@ -155,7 +207,7 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #e5e5e5;
+  color: var(--input-btn-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;
@@ -169,7 +221,7 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: whitesmoke;
+  color: var(--input-btn-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;

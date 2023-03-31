@@ -62,9 +62,14 @@ def search_notes():
     query = request.args.get("notes")
     datas = get_data()
     values = ""
+    # loop and display notes
     for data in datas:
         if data.lower().find(query.lower()) != -1:
             values += "<p>" + data + "</p>"
-    if values == "":
+    # if no notes found
+    if not values:
+        values = "<p>No results found !</p>"
+    # if input is left empty
+    if not query:
         values = "<p>No results found !</p>"
     return result_list.replace("$$DATA$$", values)
