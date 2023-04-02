@@ -11,53 +11,38 @@
 /* color schemes */
 
 :root {
-	/* original */
-
-	/* --body-color-start: #61d954; */
-	/* --body-color-end: #2ebf75; */
-	/* --main-bg-color: #202020; */
-	/* --input-form-color: #e5e5e5; */
-	/* --input-btn-color: #e5e5e5; */
-	/* --txt-title-color: #ffffff; */
-	/* --txt-data-color: #e5e5e5; */
-	/* --border-title-color: #2ebf75; */
-	/* --border-form-color: #eb3461; */
-
-	/* swift kiss */
-
+	/* lost time */
 	/* --body-color-start: #333333; */
 	/* --body-color-end: #202020; */
-	/* --main-bg-color: #EF3E4A; */
-	/* --input-form-color: #FEDAC2; */
-	/* --input-btn-color: #FEDAC2; */
-	/* --txt-title-color: #B0D8DC; */
-	/* --txt-data-color: #FEDAC2; */
-	/* --border-title-color: #B0D8DC; */
-	/* --border-form-color: #FEDAC2; */
+	/* --main-bg-color: #E7E7E7; */
+	/* --input-form-color: #DA9F18; */
+	/* --input-btn-color: #DA9F18; */
+	/* --txt-data-color: #DA9F18; */
+	/* --border-form-color: #DA9F18; */
+	/* --txt-title-color: #766C08; */
+	/* --border-title-color: #766C08; */
 
-	/* chivalrous fox */
-
+	/* climb the terrace */
 	--body-color-start: #333333;
 	--body-color-end: #202020;
-	--main-bg-color: #B6CAC0;
-	--input-form-color: #C02A1B;
-	--input-btn-color: #C02A1B;
-	--txt-title-color: #C02A1B;
-	--txt-data-color: #C02A1B;
-	--border-title-color: #C02A1B;
-	--border-form-color: #C02A1B;
+	--main-bg-color: #343B3F;
+	--input-form-color: #FF89B5;
+	--input-btn-color: #FF89B5;
+	--txt-data-color: #FF89B5;
+	--border-form-color: #FF89B5;
+	--txt-title-color: #D1BDFF;
+	--border-title-color: #D1BDFF;
 
-	/* cruller intentions */
-
+	/* day trip */
 	/* --body-color-start: #333333; */
 	/* --body-color-end: #202020; */
-	/* --main-bg-color: #FDF06F; */
-	/* --input-form-color: #D31B33; */
-	/* --input-btn-color: #D31B33; */
-	/* --txt-title-color: #D31B33; */
-	/* --txt-data-color: #D31B33; */
-	/* --border-title-color: #D31B33; */
-	/* --border-form-color: #D31B33; */
+	/* --main-bg-color: #F83439; */
+	/* --input-form-color: #9BC6E3; */
+	/* --input-btn-color: #9BC6E3; */
+	/* --txt-data-color: #9BC6E3; */
+	/* --border-form-color: #9BC6E3; */
+	/* --txt-title-color: #321913; */
+	/* --border-title-color: #321913; */
 }
 
 body {
@@ -207,7 +192,7 @@ p {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: var(--input-btn-color);
+  color: var(--txt-title-color);
   letter-spacing: 0.5px;
   background-color: transparent;
   border: none;
@@ -232,4 +217,18 @@ p {
   cursor: default;
   outline: none;
 }
-
+.home {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--txt-title-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+  padding: 20px 5px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+  outline: none;
+}

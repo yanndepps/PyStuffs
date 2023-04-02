@@ -24,7 +24,7 @@ const addUserName = document.getElementById("add-user");
 const createUser = document.getElementById("create-user");
 
 // display greetings in 21 languages -> pick one at random each time
-const wordList = ["Bonjour, ", "Hola, ", "Zdravstvuyte ", "Nǐn hǎo, ", "Salve, ",
+const wordList = ["Bonjour, ", "Hola, ", "Zdravstvuyte, ", "Nǐn hǎo, ", "Salve, ",
 	"Konnichiwa, ", "Guten Tag, ", "Olá, ", "Anyoung haseyo, ", "Asalaam alaikum, ",
 	"Goddag, ", "Shikamoo, ", "Goedendag, ", "Yassas, ", "Dzień dobry, ", "Namaste, ", "Merhaba, ",
 	"Shalom, ", "God dag, ", "Yo, "];
