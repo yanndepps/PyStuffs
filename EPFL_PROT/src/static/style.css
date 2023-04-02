@@ -12,37 +12,26 @@
 
 :root {
 	/* lost time */
-	/* --body-color-start: #333333; */
-	/* --body-color-end: #202020; */
-	/* --main-bg-color: #E7E7E7; */
-	/* --input-form-color: #DA9F18; */
-	/* --input-btn-color: #DA9F18; */
-	/* --txt-data-color: #DA9F18; */
-	/* --border-form-color: #DA9F18; */
-	/* --txt-title-color: #766C08; */
-	/* --border-title-color: #766C08; */
-
-	/* climb the terrace */
 	--body-color-start: #333333;
 	--body-color-end: #202020;
-	--main-bg-color: #343B3F;
-	--input-form-color: #FF89B5;
-	--input-btn-color: #FF89B5;
-	--txt-data-color: #FF89B5;
-	--border-form-color: #FF89B5;
-	--txt-title-color: #D1BDFF;
-	--border-title-color: #D1BDFF;
+	--main-bg-color: #E7E7E7;
+	--input-form-color: #DA9F18;
+	--input-btn-color: #DA9F18;
+	--txt-data-color: #DA9F18;
+	--border-form-color: #DA9F18;
+	--txt-title-color: #766C08;
+	--border-title-color: #766C08;
 
-	/* day trip */
+	/* climb the terrace */
 	/* --body-color-start: #333333; */
 	/* --body-color-end: #202020; */
-	/* --main-bg-color: #F83439; */
-	/* --input-form-color: #9BC6E3; */
-	/* --input-btn-color: #9BC6E3; */
-	/* --txt-data-color: #9BC6E3; */
-	/* --border-form-color: #9BC6E3; */
-	/* --txt-title-color: #321913; */
-	/* --border-title-color: #321913; */
+	/* --main-bg-color: #343B3F; */
+	/* --input-form-color: #FF89B5; */
+	/* --input-btn-color: #FF89B5; */
+	/* --txt-data-color: #FF89B5; */
+	/* --border-form-color: #FF89B5; */
+	/* --txt-title-color: #D1BDFF; */
+	/* --border-title-color: #D1BDFF; */
 }
 
 body {

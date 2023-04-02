@@ -18,7 +18,7 @@
 // --- local storage & user inputs --- //
 /////////////////////////////////////////
 
-// pick some DOM elements
+// pick some useful DOM elements
 const greetings = document.getElementById("greetings");
 const addUserName = document.getElementById("add-user");
 const createUser = document.getElementById("create-user");
@@ -35,14 +35,15 @@ const msg = rndWord;
 // use guest if no username
 const gst = "guest";
 
-
 // check for local storage values at start
-for (let [key, value] of Object.entries(localStorage)) {
-	// is the value an empty string ? display guest : display username
-	if (value == "") {
-		greetings.innerText = `${msg} ${gst} !`;
-	} else {
-		greetings.innerText = `${msg}` + localStorage.getItem(`${key}`) + " !";
+if (greetings) {
+	for (let [key, value] of Object.entries(localStorage)) {
+		// is the value an empty string ? display guest : display username
+		if (value === "") {
+			greetings.innerText = `${msg} ${gst} !`;
+		} else {
+			greetings.innerText = `${msg}` + localStorage.getItem(`${key}`) + " !";
+		}
 	}
 }
 
@@ -108,7 +109,6 @@ class TypeWritter {
 				this.type();
 			}, this.spd);
 		}
-
 	}
 }
 
@@ -123,3 +123,4 @@ const typeNote = new TypeWritter(emptyTxt, txtNote, idAddNote, spdUsr, typoNote)
 typeNote.type();
 typeUsr.type();
 typeSearch.type();
+
