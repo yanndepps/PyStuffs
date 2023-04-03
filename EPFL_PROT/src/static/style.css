@@ -12,26 +12,26 @@
 
 :root {
 	/* lost time */
-	--body-color-start: #333333;
-	--body-color-end: #202020;
-	--main-bg-color: #E7E7E7;
-	--input-form-color: #DA9F18;
-	--input-btn-color: #DA9F18;
-	--txt-data-color: #DA9F18;
-	--border-form-color: #DA9F18;
-	--txt-title-color: #766C08;
-	--border-title-color: #766C08;
-
-	/* climb the terrace */
 	/* --body-color-start: #333333; */
 	/* --body-color-end: #202020; */
-	/* --main-bg-color: #343B3F; */
-	/* --input-form-color: #FF89B5; */
-	/* --input-btn-color: #FF89B5; */
-	/* --txt-data-color: #FF89B5; */
-	/* --border-form-color: #FF89B5; */
-	/* --txt-title-color: #D1BDFF; */
-	/* --border-title-color: #D1BDFF; */
+	/* --main-bg-color: #E7E7E7; */
+	/* --input-form-color: #DA9F18; */
+	/* --input-btn-color: #DA9F18; */
+	/* --txt-data-color: #DA9F18; */
+	/* --border-form-color: #DA9F18; */
+	/* --txt-title-color: #766C08; */
+	/* --border-title-color: #766C08; */
+
+	/* climb the terrace */
+	--body-color-start: #333333;
+	--body-color-end: #202020;
+	--main-bg-color: #343B3F;
+	--input-form-color: #FF89B5;
+	--input-btn-color: #FF89B5;
+	--txt-data-color: #FF89B5;
+	--border-form-color: #FF89B5;
+	--txt-title-color: #D1BDFF;
+	--border-title-color: #D1BDFF;
 }
 
 body {
@@ -175,7 +175,7 @@ p {
 #home {
   position: absolute;
   top: 495px;
-  left: 190px;
+  /* left: 190px; */
   /* top: 395px; */
   left: 558px;
   font-family: "Poppins",sans-serif;
@@ -220,4 +220,28 @@ p {
   display: inline-block;
   cursor: default;
   outline: none;
+}
+
+/* analog clock */
+.clock {
+	background: #202020;
+	/* background: #16191e; */
+	height: 100px; /* 128px */
+	width: 100px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 424px;
+	left: 350px;
+	box-sizing: content-box;
+	border-radius: 50%;
+	border: 3px solid #343B3F;
+	/* box-shadow: 15px 15px 35px rgba(0,0,0,0.2), */
+  box-shadow: 0 20px 25px rgba(0,0,0,0.25),
+	inset 0 0 30px rgba(0,0,0,0.4);
+}
+
+img {
+	position: relative;
+	height: 100px;
+	width: 100px;
 }
