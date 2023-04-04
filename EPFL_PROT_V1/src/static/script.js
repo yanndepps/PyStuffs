@@ -21,7 +21,6 @@ let setClock = setInterval(() => {
 	let calcHr = (hr * 30) + (min / 2);
 	let calcMin = (min * 6) + (sec / 10);
 	let calcSec = sec * 6;
-	console.log(calcSec);
 
 	// use the deg values to rotate each hands
 	hour.style.transform = `rotate(${calcHr}deg)`
