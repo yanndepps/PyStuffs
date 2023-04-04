@@ -1,2 +1,0 @@
-do your homework
-unchained django
