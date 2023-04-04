@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@300;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* color schemes */
+
+:root {
+	/* lost time */
+	/* --body-color-start: #333333; */
+	/* --body-color-end: #202020; */
+	/* --main-bg-color: #E7E7E7; */
+	/* --input-form-color: #DA9F18; */
+	/* --input-btn-color: #DA9F18; */
+	/* --txt-data-color: #DA9F18; */
+	/* --border-form-color: #DA9F18; */
+	/* --txt-title-color: #766C08; */
+	/* --border-title-color: #766C08; */
+
+	/* climb the terrace */
+	--body-color-start: #333333;
+	--body-color-end: #202020;
+	--main-bg-color: #343B3F;
+	--input-form-color: #FF89B5;
+	--input-btn-color: #FF89B5;
+	--txt-data-color: #FF89B5;
+	--border-form-color: #FF89B5;
+	--txt-title-color: #D1BDFF;
+	--border-title-color: #D1BDFF;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+		var(--body-color-start),
+		var(--body-color-end)
+    );
+}
+
+p {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--txt-data-color);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+#main {
+  background-color: var(--main-bg-color);
+  height: 450px;
+  width: 400px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0,0,0,0.35);
+}
+
+#title {
+  margin-top: 35px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--border-title-color);
+}
+
+#title > h1 {
+  /* font-family: "Poppins",sans-serif; */
+  font-family: "DM Sans",sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: var(--txt-title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* user name */
+#input-form-user {
+  position: absolute;
+  top: 130px;
+  left: 58px;
+}
+
+#add-user {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--input-form-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--border-form-color);
+  outline: none;
+  padding-left: 5px;
+}
+
+/* add new note */
+#input-form-add {
+  position: absolute;
+  top: 220px;
+  left: 58px;
+}
+
+#add-notes {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--input-form-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--border-form-color);
+  outline: none;
+  padding-left: 5px;
+}
+
+/* show all notes */
+#input-form-show {
+  position: absolute;
+  top: 395px;
+  left: 58px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--input-form-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+}
+
+/* display notes data */
+#notes-data {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 25px;
+  padding-bottom: 28.5px;
+  border-bottom: 2px solid var(--border-title-color);
+}
+
+/* search notes */
+#input-form-get {
+  position: absolute;
+  top: 310px;
+  left: 58px;
+}
+
+#get-notes {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--input-form-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--border-form-color);
+  outline: none;
+  padding-left: 5px;
+}
+
+/* back home btn */
+#home {
+  position: absolute;
+  top: 495px;
+  /* left: 190px; */
+  /* top: 395px; */
+  left: 558px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--txt-title-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+}
+
+
+/* all buttons */
+.btn-notes-all,
+.btn-home,
+.send {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--input-btn-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+  padding: 20px 5px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+  outline: none;
+}
+.home {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--txt-title-color);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  border: none;
+  padding: 20px 5px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+  outline: none;
+}
+
+/* analog clock */
+.clock {
+	background: #202020;
+	/* background: #16191e; */
+	height: 100px; /* 128px */
+	width: 100px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 425px;
+	left: 350px;
+	box-sizing: content-box;
+	border-radius: 50%;
+	border: 3px solid var(--main-bg-color);
+	/* box-shadow: 15px 15px 35px rgba(0,0,0,0.2), */
+  box-shadow: 0 20px 25px rgba(0,0,0,0.25),
+	inset 0 0 8px rgba(0,0,0,0.8);
+}
+
+img {
+	position: relative;
+	height: 100px;
+	width: 100px;
+}
+
+.hand {
+	position: absolute;
+	background-color: var(--border-title-color);
+	margin: auto;
+	left: 0;
+	right: 0;
+	border-radius: 3px;
+	transform-origin: bottom;
+}
+
+.hour {
+	height: 20px;
+	width: 3px;
+	top: 30px;
+}
+
+.minute {
+	height: 25px;
+	width: 3px;
+	top: 25px;
+}
+
+.seconds {
+	height: 30px;
+	width: 2px;
+	top: 20px;
+	background-color: var(--txt-data-color);
+}
